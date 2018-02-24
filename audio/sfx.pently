@@ -1,0 +1,44 @@
+durations stick
+notenames english
+
+song New_song
+  time 4/4
+  scale 16
+  tempo 450.00
+
+  pattern pat_2_0_0 with blank on pulse1
+    absolute
+    g#'2 @blank__1 g#'2 @blank__2 g#'1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 
+  at 1
+  play pat_2_0_0
+  at 17
+  dal segno
+instrument blank
+  volume 15 
+  timbre 2 
+
+instrument New_instrument
+  volume 15 14 13 12 11 10 8 6 4 2 0 
+  timbre 2 
+
+instrument blank__1
+  volume 8 
+  timbre 2 
+
+instrument blank__2
+  volume 3 
+  timbre 2 
+
+song New_song__2
+  time 4/4
+  scale 16
+  tempo 900.00
+
+  pattern pat_2_0_0 with New_instrument on pulse1
+    absolute
+    e'''4 w8 c'''4 w8 e'''4 w8 c'''2 w4 w8 r1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 w1 
+  at 1
+  play pat_2_0_0
+  at 17
+  dal segno
+

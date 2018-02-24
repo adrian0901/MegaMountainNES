@@ -1,0 +1,388 @@
+durations stick
+notenames english
+
+sfx twobeeps on pulse
+  timbre 1
+  volume 15 0 0 0 0 0 0 0 8
+  pitch g#'
+
+sfx sfx2 on pulse
+  rate 6
+  volume 15 15 15 15
+  pitch e''' c''' e''' c'''
+  timbre 2
+
+sfx othersfxpart1 on pulse
+  rate 4
+  pitch a' g#' g' f#' f#' f#' f#' f#' a' g#' g' f#' f#' f#' f#' f#' a' g#' g' f#'
+  volume 15 15 15 15 0 0 0 0 8 8 8 8 0 0 0 0 8 8 8 8
+  timbre 2 2 1 1 1 1 1 1 2 2 1 1 1 1 1 1 2 2 1 1
+
+sfx othersfxpart2 on noise
+  rate 4
+  pitch 11 12 13 13 13 13 13 13 11 12 13 13 13 13 13 13 11 12 13
+  volume 15 15 15 0 0 0 0 0 8 8 8 0 0 0 0 0 8 8 8
+  timbre 1
+  
+sfx fall on pulse
+  rate 3
+  volume 15 15 15 15 15 15 15 15 15 15
+  pitch a'' g#'' g'' f#'' f'' e'' d#'' d'' c#'' c''
+  timbre 1 0 0 0 0 0 0 0 1 0    
+  
+sfx text on noise
+  volume 15 15 15 15 15
+  pitch 15 14 13 14 15
+  timbre 1 1 0 1 0           
+  
+song Foothills
+  time 4/4
+  scale 16
+  tempo 180.00
+
+  pattern pat_2_0_0 with ban on pulse1
+    absolute
+    ff g'4 w8 g'4 w8 g'4 w16 a#4 c'8 w16 g'4 w8 g'4 w8 g'4 w16 c'4 d'8 w16 
+  pattern pat_2_0_1 with piano on pulse1
+    absolute
+    r4 w16 pp g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 g#'8 w16 r8 w16 c''8 w16 r8 w16 d''8 w16 r8 f'4 w16 
+  pattern pat_2_0_2 with ban on pulse1
+    absolute
+    g'4 w8 g'4 w8 g'4 w16 a#4 c'8 w16 g'4 w8 g'4 w16 f'2 @lateban a#''8 f''8 a#'16 
+  pattern pat_2_0_3 with piano on pulse1
+    absolute
+    r4 w16 pp g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 c''8 w16 r8 w16 d#''8 w16 r8 w16 g''8 w16 r8 f''4 w16 
+  pattern pat_2_0_4 with ban on pulse1
+    absolute
+    r2 w16 a#'8 d''16 d#''8 g''8 w16 @lateban g'16 @ban a#'8 d''16 d#''8 g''16 c''8 w16 f''4 w8 g#''4 w8 f''4 w16 d''16 c''8 a#'16 
+  pattern pat_2_0_5 with ban on pulse1
+    absolute
+    r2 w16 a#'8 d''16 d#''8 g''8 w16 @lateban g'16 @ban a#'8 d''16 d#''8 g''16 c''8 w16 f''4 w8 g#''8 w16 @piano d#''8 w16 r8 d''8 @ban a#'16 d''16 f''16 g#''16 a#''16 
+  pattern pat_2_0_6 with ban on pulse1
+    absolute
+    r8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''8 w16 @ban c'''4 c'''8 w16 @triple_ding d#'''8 w16 @ban a#''8 w16 a#''8 w16 a#''4 w16 @triple_ding d#'''16 @piano c#''8 d#''8 r16 f''4 r8 w16 
+  pattern pat_2_0_7 with ban on pulse1
+    absolute
+    r8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''8 w16 @ban c'''4 c'''8 w16 @pianov02 d#''8 w16 d''8 w16 r8 w16 d#''8 w16 r8 f''4 w8 @ban e''16 f''16 d''16 a#'16 g#'16 f'16 d'16 
+  pattern pat_2_0_8 with pianov02 on pulse1
+    absolute
+    r8 w16 c'8 w16 r8 d#'8 w16 r16 g#'8 r16 g#'8 d#'8 w16 r16 g#'8 r16 a#'4 w16 @lateban a#'8 w16 w1 
+  pattern pat_2_0_9 with pianov02 on pulse1
+    absolute
+    r8 w16 c''8 w16 r8 g#'8 w16 r16 d#'8 r16 d#'8 g#'8 w16 r16 c'8 r16 a#8 w16 c#'4 w16 @lateban a#''16 c'''2 w4 w8 w16 
+  pattern pat_2_0_10 with pianov02 on pulse1
+    absolute
+    g'2 w16 a#'8 w16 g#'4 w16 a#'4 g#'8 w16 g'2 w16 g''8 w16 f''4 w16 g''4 f''8 w16 
+  pattern pat_2_0_11 with pianov02 on pulse1
+    absolute
+    d#''4 w16 c''4 g#'8 w16 f'8 w16 r8 w16 f2 w4 w8 w1 
+  pattern pat_2_1_0 with lateban on pulse2
+    absolute
+    ff a#'4 w8 a#'4 w8 a#'4 w16 c#'4 d#'8 w16 a#'4 w8 a#'4 w8 a#'4 w16 d#'4 f'8 w16 
+  pattern pat_2_1_1 with piano on pulse2
+    absolute
+    r8 w16 ff g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 g#'8 w16 r8 w16 c''8 w16 r8 w16 d''8 w16 r8 f'4 w8 w16 
+  pattern pat_2_1_2 with lateban on pulse2
+    absolute
+    a#'4 w8 a#'4 w8 a#'4 w16 c#'4 d#'8 w16 a#'4 w8 a#'4 w16 @ban d''8 w16 @triple_ding d''''8 w16 d''''8 w16 @lateban g#''8 d''8 
+  pattern pat_2_1_3 with piano on pulse2
+    absolute
+    r8 w16 ff g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 c''8 w16 r8 w16 d#''8 w16 r8 w16 g''8 w16 r8 f''4 w8 w16 
+  pattern pat_2_1_4 with pianov02 on pulse2
+    absolute
+    r8 w16 ff g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 g#'8 w16 r8 w16 c''8 w16 r8 w16 d''8 w16 r8 f'4 w8 w16 
+  pattern pat_2_1_5 with pianov02 on pulse2
+    absolute
+    r8 w16 ff g'8 g#'16 a#'8 d#''8 w16 r16 g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16 c''8 w16 r8 w16 d#''8 w16 r8 w16 g''8 w16 r8 f''4 w8 w16 
+  pattern pat_2_1_6 with piano on pulse2
+    absolute
+    r8 w16 g#'8 w16 r8 c''8 w16 r16 d#''8 r16 d#''8 c''8 w16 r16 d#''8 r16 g''4 w16 @pianov02 g16 a#8 c#'16 d#'8 g'16 a#'8 c''8 r16 c#''4 r8 w16 
+  pattern pat_2_1_7 with piano on pulse2
+    absolute
+    r8 w16 a'8 w16 r8 c''8 w16 r16 d#''8 r16 d#''8 c''8 w16 r16 g''8 w16 f''8 w16 r8 w16 g''8 w16 r8 g#''4 w8 @lateban a'16 a#'16 g#'16 f'16 d'16 a#16 g#16 
+  pattern pat_2_1_8 with piano on pulse2
+    absolute
+    r8 w16 g#'8 w16 r8 c''8 w16 r16 d#''8 r16 d#''8 c''8 w16 r16 d#''8 r16 g''4 w8 @lateban d#''8 g''16 g#''8 a#''8 w16 @triple_ding d#'''4 d#'''4 w8 
+  pattern pat_2_1_9 with piano on pulse2
+    absolute
+    r8 w16 g#''8 w16 r8 d#''8 w16 r16 c''8 r16 c''8 d#''8 w16 r16 g#'8 r16 g'8 w16 a#'2 @lateban d'''16 d#'''8 a#''16 g''8 a#''16 g''8 f''16 d#''8 c''16 
+  pattern pat_2_1_10 with piano on pulse2
+    absolute
+    a#'2 w16 g''8 w16 f''4 w16 g''4 f''8 w16 d#''2 w16 d#'''8 w16 c#'''4 w16 d#'''4 c#'''8 w16 
+  pattern pat_2_1_11 with piano on pulse2
+    absolute
+    c'''4 w16 d#'''4 c'''8 w16 d'''8 w16 r8 w16 d'2 w4 w8 w1 
+  pattern pat_2_2_0 with _11fbass on triangle
+    absolute
+    d#4 w8 d#4 w8 d#4 w16 f#'4 g#'8 w16 d#4 w8 d#4 w8 d#4 w16 g#'4 a#'8 w16 
+  pattern pat_2_2_1 with _11fbass on triangle
+    absolute
+    d#8 w16 d#'8 w16 g8 w16 d#'8 w16 d#8 w16 f8 g8 w16 g16 d#'8 w16 f8 w16 f'8 w16 g#8 w16 c'8 w16 a#8 w16 c'8 d'8 w16 d'16 a#8 w16 
+  pattern pat_2_2_2 with _11fbass on triangle
+    absolute
+    d#4 w8 d#4 w8 d#4 w16 f#'4 g#'8 w16 d#4 w8 d#4 w16 a#2 w8 a#8 w16 
+  pattern pat_2_2_3 with _11fbass on triangle
+    absolute
+    g#8 w16 c'8 w16 d#'8 w16 f'8 w16 f#'8 w16 f'8 w16 d#'8 w16 c'8 a#16 d#8 w16 g'8 w16 a#'8 w16 d#''8 w16 f''8 g''8 w16 a#''4 c'8 w16 
+  pattern pat_2_2_4 with _11fbass on triangle
+    absolute
+    f8 w16 f'8 w16 d#'8 w16 c'8 w16 f8 w16 g8 w16 a8 w16 c'8 w16 a#'4 w8 c''4 w16 d''4 w8 w16 d''16 a#'16 g#'16 f'16 d'16 a#16 
+  pattern pat_2_2_5 with _11fbass on triangle
+    absolute
+    g#8 w16 c'8 w16 d#'8 w16 f'8 w16 f#'8 w16 f'8 w16 d#'8 w16 c'8 a#16 d#8 w16 d#'8 w16 g'8 w16 g#'8 w16 a#'8 w16 g#'8 w16 g'8 w16 d#'8 w16 
+  pattern pat_2_2_6 with _11fbass on triangle
+    absolute
+    d#4 w16 g4 a#8 w16 a#4 w16 d'4 f'8 w16 c'4 w16 g'4 c'8 w16 g4 w16 d'4 a#8 w16 
+  pattern pat_2_2_7 with _11fbass on triangle
+    absolute
+    g#4 w16 d#'4 g#'8 w16 f'4 w8 a#4 w8 
+  pattern pat_2_3_0
+    kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 clhat_c_16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_16 clhat_c_16 kicksnare_a_16 
+  pattern pat_2_3_1
+    kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 clhat_c_16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 clhat_c_16 
+  pattern pat_2_3_2
+    kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 clhat_c_16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_4 w8 w16 clhat_c_8 w16 clhat_c_8 w16 
+  pattern pat_2_3_3
+    kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 kicksnare_0_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 clhat_c_16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 kicksnare_0_8 kicksnare_a_16 kicksnare_0_8 kicksnare_0_16 kicksnare_a_16 kicksnare_a_16 kicksnare_a_16 
+  pattern pat_2_3_4
+    kicksnare_0_8 clhat_c_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 w16 clhat_c_8 kicksnare_a_16 kicksnare_0_8 clhat_c_16 kicksnare_0_8 clhat_c_16 kicksnare_a_8 w16 clhat_c_8 w16 kicksnare_0_8 clhat_c_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 w16 clhat_c_8 kicksnare_a_16 kicksnare_0_8 clhat_c_16 kicksnare_0_8 clhat_c_16 kicksnare_a_8 clhat_c_16 kicksnare_a_8 w16 
+  pattern pat_2_3_5
+    kicksnare_0_8 clhat_c_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 w16 clhat_c_8 kicksnare_a_16 kicksnare_0_8 clhat_c_16 kicksnare_0_8 clhat_c_16 kicksnare_a_8 w16 clhat_c_8 w16 kicksnare_0_8 clhat_c_16 clhat_c_8 kicksnare_0_16 kicksnare_a_8 w16 clhat_c_8 kicksnare_a_4 w8 w16 clhat_c_8 w16 clhat_c_8 w16 
+  pattern pat_2_3_6
+    kicksnare_0_8 w16 clhat_c_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 clhat_c_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 clhat_c_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_0_8 w16 clhat_c_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 
+  pattern pat_2_3_7
+    kicksnare_0_8 w16 clhat_c_8 w16 kicksnare_0_8 w16 kicksnare_a_8 w16 kicksnare_a_4 w8 clhat_c_2 w4 w8 w1 
+  at 1
+  play pat_2_0_0
+  play pat_2_1_0
+  play pat_2_2_0
+  play pat_2_3_0
+  at 4
+  play pat_2_0_2
+  play pat_2_1_2
+  play pat_2_2_2
+  play pat_2_3_2
+  at 7
+  play pat_2_0_1
+  play pat_2_1_1
+  play pat_2_2_1
+  play pat_2_3_1
+  at 10
+  play pat_2_0_3
+  play pat_2_1_3
+  play pat_2_2_1
+  play pat_2_3_0
+  at 13
+  play pat_2_0_4
+  play pat_2_1_4
+  play pat_2_2_1
+  play pat_2_3_1
+  at 16
+  play pat_2_0_5
+  play pat_2_1_5
+  play pat_2_2_1
+  play pat_2_3_3
+  at 19
+  play pat_2_0_8
+  play pat_2_1_8
+  play pat_2_2_5
+  play pat_2_3_4
+  at 22
+  play pat_2_0_9
+  play pat_2_1_9
+  play pat_2_2_5
+  play pat_2_3_4
+  at 25
+  play pat_2_0_6
+  play pat_2_1_6
+  play pat_2_2_3
+  play pat_2_3_4
+  at 28
+  play pat_2_0_7
+  play pat_2_1_7
+  play pat_2_2_4
+  play pat_2_3_5
+  at 31
+  play pat_2_0_10
+  play pat_2_1_10
+  play pat_2_2_6
+  play pat_2_3_6
+  at 34
+  play pat_2_0_11
+  play pat_2_1_11
+  play pat_2_2_7
+  play pat_2_3_7
+  at 35:3:0
+  dal segno
+song Intro_Theme_26_Ending
+  time 4/4
+  scale 16
+  tempo 56.25
+
+  pattern pat_3_0_0 with pianov02 on pulse1
+    absolute
+    r16 mf d''8 mp d''8 d''8 d''8 mf d''8 mp d''8 d''8 d''8 mf c''8 mp c''8 c''8 c''8 mf d''8 mp d''8 mf e''8 mp e''16 
+  pattern pat_3_0_1 with pianov02 on pulse1
+    absolute
+    r16 mf b8 mp b8 b8 b8 mf c'8 mp c'8 c'8 c'8 mf c'8 mp c'8 c'8 c'8 mf d'8 mp d'8 mf f#'8 mp f#'16 
+  pattern pat_3_0_2 with pianov02 on pulse1
+    absolute
+    r16 mf g'8 mp g'8 g'8 g'16 mf d''4 e''16 d''16 c''16 b'16 
+  pattern pat_3_0_3 with pianov02 on pulse1
+    absolute
+    r16 mf d''8 mp d''8 d''8 d''8 mf d''8 mp d''8 d''8 d''8 mf c''8 mp c''8 mf d''8 mp d''8 mf d''8 mp d''16 mf d'8 c'8 
+  pattern pat_3_1_1 with piano on pulse2
+    absolute
+    r8 b''16 c'''16 d'''16 g'''8 w16 b''16 c'''16 d'''16 e'''8 e'''16 d'''8 c'''8 w16 c'''16 d'''8 w16 d'''16 f'''8 w16 g''16 g''4 
+  pattern pat_3_1_2 with piano on pulse2
+    absolute
+    r8 b''16 c'''16 d'''16 g'''8 w16 b''16 c'''16 d'''16 e'''8 e'''16 d'''8 c'''16 d'''16 e'''16 f#'''8 d'''8 g'''4 w16 b'8 a'8 
+  pattern pat_3_1_3 with piano on pulse2
+    absolute
+    g'8 g'8 a'16 b'8 w16 c''8 b'16 a'8 w16 c''8 a'8 a'8 b'16 c''8 w16 b'8 c''16 d''8 w16 b'16 d''16 
+  pattern pat_3_1_4 with piano on pulse2
+    absolute
+    e''8 e''8 f#''16 g''8 w16 a''8 w16 a''16 c'''16 b''16 a''16 g''16 
+  pattern pat_3_2_0 with plainbass on triangle
+    absolute
+    MP1 MP2 MP3 MP4 g''4 w8 w16 r16 g''4 w8 w16 r16 f''4 w8 w16 r16 a#''8 w16 r16 c'''8 w16 r16 
+  pattern pat_3_2_1 with plainbass on triangle
+    absolute
+    e'4 w8 w16 r16 a'4 w8 w16 r16 f#'4 w8 w16 r16 g'8 w16 r16 b'8 w16 r16 
+  pattern pat_3_2_2 with plainbass on triangle
+    absolute
+    c''4 w8 w16 r16 f#'8 r4 w8 
+  pattern pat_3_2_3 with plainbass on triangle
+    absolute
+    g''4 w8 w16 r16 g''4 w8 w16 r16 f''8 w16 r16 f#''8 w16 r16 g''8 w16 r16 g'16 r16 f#'16 r16 
+  pattern pat_3_3_0
+    r8 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_8 kicksnare_0_8 kicksnare_0_8 
+  pattern pat_3_3_1
+    r8 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_4 clhat_c_8 
+  pattern pat_3_3_2
+    kicksnare_0_8 clhat_c_8 clhat_c_8 clhat_c_8 kicksnare_0_8 clhat_c_8 kicksnare_a_8 clhat_c_8 kicksnare_0_8 clhat_c_8 clhat_c_8 clhat_c_8 kicksnare_0_8 clhat_c_8 kicksnare_a_8 clhat_c_8 
+  pattern pat_3_3_3
+    kicksnare_0_8 clhat_c_8 clhat_c_8 clhat_c_8 kicksnare_0_2 w1 
+  at 1
+  play pat_3_0_0
+  play pat_3_2_0
+  play pat_3_3_1
+  at 2
+  play pat_3_0_0
+  play pat_3_1_1
+  play pat_3_2_0
+  play pat_3_3_1
+  at 4
+  play pat_3_0_3
+  play pat_3_1_2
+  play pat_3_2_3
+  play pat_3_3_0
+  at 6
+  play pat_3_0_1
+  play pat_3_1_3
+  play pat_3_2_1
+  play pat_3_3_2
+  at 8
+  play pat_3_0_2
+  play pat_3_1_4
+  play pat_3_2_2
+  play pat_3_3_3
+  at 9
+  dal segno
+instrument _11fbass
+  volume 8 8 8 8 8 8 8 8 8 8 8 0 
+
+instrument ban
+  decay 5
+  volume 9 8 7 6 5 4 4 3 3 
+  timbre 0 
+
+instrument lateban
+  decay 5
+  volume 0 9 8 7 6 5 4 4 3 3 
+  timbre 0 
+
+instrument triple_ding
+  decay 7
+  volume 8 6 4 8 6 4 8 6 4 3 
+  timbre 0 
+  pitch 2 -2 -2 -1 -1 -1 0 
+
+instrument piano
+  decay 2
+  volume 10 8 7 6 6 5 5 5 4 
+  timbre 2 1 
+
+instrument pianov02
+  decay 2
+  volume 10 8 7 6 6 5 5 5 4 
+  timbre 2 
+
+instrument plainbass
+  volume 8 
+
+instrument rhyguitar
+  volume 7 7 6 
+  timbre 0 0 0 1 
+  pitch 2 -1 0 
+
+song Villain
+  time 4/4
+  scale 16
+  tempo 128.57
+
+  pattern pat_3_0_0 with rhyguitar on pulse1
+    absolute
+    d,16 r8 w16 d,16 r16 d,16 r16 f,8 d,16 r8 w16 d,16 r16 g,8 d,16 r8 w16 d,16 r16 g,8 g#,8 g,8 f,8 
+  pattern pat_3_0_1 with rhyguitar on pulse1
+    absolute
+    e,16 r8 w16 e,16 r16 e,16 r16 g,8 e,16 r8 w16 e,16 r16 a,8 e,16 r8 w16 e,16 r16 a,8 a#,8 a,8 g,8 
+  pattern pat_3_1_0 with rhyguitar on pulse2
+    absolute
+    a,16 r8 w16 a,16 r16 a,16 r16 c8 a,16 r8 w16 a,16 r16 d8 a,16 r8 w16 a,16 r16 d8 d#8 d8 c8 
+  pattern pat_3_1_1 with rhyguitar on pulse2
+    absolute
+    b,16 r8 w16 b,16 r16 b,16 r16 d8 b,16 r8 w16 b,16 r16 e8 b,16 r8 w16 b,16 r16 e8 f8 e8 d8 
+  pattern pat_3_2_0 with _11fbass on triangle
+    absolute
+    d8 g#8 c8 d8 f'8 g#8 c8 d8 d8 g#8 c8 d8 f'8 g#8 c8 d8 
+  pattern pat_3_2_1 with _11fbass on triangle
+    absolute
+    e8 a#8 d8 e8 g'8 a#8 d8 e8 e8 a#8 d8 e8 g'8 a#8 d8 e8 
+  pattern pat_3_3_0
+    kicksnare_0_8 clhat_c_8 ohat_c_8 kicksnare_0_8 kicksnare_a_8 clhat_c_8 ohat_c_4 kicksnare_0_8 clhat_c_16 kicksnare_0_16 ohat_c_8 kicksnare_0_8 kicksnare_a_8 clhat_c_8 ohat_c_4 
+  at 1
+  play pat_3_0_0
+  play pat_3_1_0
+  play pat_3_2_0
+  play pat_3_3_0
+  at 3
+  play pat_3_0_1
+  play pat_3_1_1
+  play pat_3_2_1
+  play pat_3_3_0
+  at 5
+  dal segno
+sfx noise_kicksnare_0 on noise
+  volume 11 8 6 4 4 
+  pitch 10 0 
+
+drum kicksnare_0_ noise_kicksnare_0
+sfx noise_kicksnare_a on noise
+  volume 11 8 6 4 4 
+  pitch 4 10 
+
+drum kicksnare_a_ noise_kicksnare_a
+sfx noise_clhat_c on noise
+  volume 5 3 2 1 1 0 
+  timbre | 0 1 
+  pitch 12 
+
+drum clhat_c_ noise_clhat_c
+sfx noise_ohat_c on noise
+  volume 5 5 4 4 3 3 2 2 2 2 1 1 1 1 0 
+  timbre | 0 1 
+  pitch 12 
+
+drum ohat_c_ noise_ohat_c
+

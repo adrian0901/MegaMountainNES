@@ -52,46 +52,31 @@ song Foothills
       @lateban a#''8 f''8 a#'16
     w16 pp w4
 
-  pattern accomp_A1 with piano on pulse1
+  pattern accomp_A3 with ban on pulse1
     absolute
-    r4 w16 pp g'8 g#'16 a#'8 d#''8 w16 r16
-    g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16
-    g#'8 w16 r8 w16 c''8 w16 r8 w16
-    d''8 w16 r8 f'4 w16 
-  pattern accomp_A2 with piano on pulse1
-    absolute
-    r4 w16 pp g'8 g#'16 a#'8 d#''8 w16 r16
-    g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16
-    c''8 w16 r8 w16 d#''8 w16 r8 w16
-    g''8 w16 r8 f''4 w16 
-  pattern accomp_A3 with lateban on pulse1
-    absolute
-    r2 w16 mp a#'8
-    d''16 d#''8 g''8 w16 g'16 a#'8 d''16 d#''8 g''16
-    c''8 w16 f''4 w8 g#''8 w16
-    w8 w16 f''4 w16 d''16 c''8 a#'16 
-  pattern accomp_A4 with lateban on pulse1
-    absolute
-    r2 w16 a#'8 d''16
+    w2 w16 ff a#'8 d''16
     d#''8 g''8 w16 g'16 a#'8 d''16 d#''8 g''16
     c''8 w16 f''4 w8 g#''8 w16
+    w8 w16 f''4 w16 d''16 c''8 a#'16 
+  pattern accomp_A4 with ban on pulse1
+    absolute
     @piano d#''8 w16 r8 d''8 @ban a#'16 d''16 f''16 g#''16 a#''16
 
   pattern accomp_B1 with pianov02 on pulse1
     absolute
-    r8 w16 c'8 w16 r8 d#'8 w16 r16
+    w8 w16 c'8 w16 r8 d#'8 w16 r16
     g#'8 r16 g#'8 d#'8 w16 r16 g#'8 r16
     a#'4 w16 @lateban a#'8 w16 w4
     w2 w4 
   pattern accomp_B2 with pianov02 on pulse1
     absolute
-    r8 w16 c''8 w16 r8 g#'8 w16 r16
+    w8 w16 c''8 w16 r8 g#'8 w16 r16
     d#'8 r16 d#'8 g#'8 w16 r16 c'8 r16
     a#8 w16 c#'4 w16 @lateban a#''16 c'''8 w16
     w2 w4
   pattern accomp_B3 with ban on pulse1
     absolute
-    r8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''16
+    w8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''16
     w8 @ban c'''4 c'''8 w16 @triple_ding d#'''8 w16
     @ban a#''8 w16 a#''8 w16 a#''4 w16 @triple_ding d#'''16
     @piano c#''8 d#''8 r16 f''4 r8 w16 
@@ -118,7 +103,7 @@ song Foothills
 
   pattern lead_A1 with piano on pulse2
     absolute
-    r8 w16 ff g'8 g#'16 a#'8 d#''8 w16 r16
+    r8 w16 g'8 g#'16 a#'8 d#''8 w16 r16
     g'8 g#'16 a#'8 c''8 r16 c''16 a#'8 r16
     g#'8 w16 r8 w16 c''8 w16 r8 w16
     d''8 w16 r8 f'4 w8 w16 
@@ -127,27 +112,21 @@ song Foothills
     c''8 w16 r8 w16 d#''8 w16 r8 w16
     g''8 w16 r8 f''4 w8 w16 
 
-  pattern lead_8 with piano on pulse2
+  pattern lead_B1 with piano on pulse2
     absolute
-    r8 w16 g#'8 w16 r8 c''8 w16 r16
+    w8 w16 @piano g#'8 w16 r8 c''8 w16 r16
     d#''8 r16 d#''8 c''8 w16 r16 d#''8 r16
     g''4 w8 @lateban d#''8 g''16 g#''8 a#''16
     w8 @triple_ding d#'''4 d#'''4 w8 
-  pattern lead_9 with piano on pulse2
-    absolute
-    r8 w16 g#''8 w16 r8 d#''8 w16 r16
+    w8 w16 @piano g#''8 w16 r8 d#''8 w16 r16
     c''8 r16 c''8 d#''8 w16 r16 g#'8 r16
     g'8 w16 a#'2 @lateban d'''16
     d#'''8 a#''16 g''8 a#''16 g''8 f''16 d#''8 c''16 
-  pattern lead_6 with piano on pulse2
+  pattern lead_B2 with piano on pulse2
     absolute
-    r8 w16 g#'8 w16 r8 c''8 w16 r16
-    d#''8 r16 d#''8 c''8 w16 r16 d#''8 r16
     g''4 w16 @pianov02 g16 a#8 c#'16 d#'8 g'16
     a#'8 c''8 r16 c#''4 r8 w16 
-  pattern lead_7 with piano on pulse2
-    absolute
-    r8 w16 a'8 w16 r8 c''8 w16 r16
+    w8 w16 @piano a'8 w16 r8 c''8 w16 r16
     d#''8 r16 d#''8 c''8 w16 r16 g''8 w16
     f''8 w16 r8 w16 g''8 w16 r8 g#''16
     w4 w16 @lateban a'16 a#'16 g#'16 f'16 d'16 a#16 g#16 
@@ -235,44 +214,41 @@ song Foothills
   play drum_introend
 
   at 9
-  play accomp_A1
   play lead_A1
   play bass_A
   play drum_A
-  at 13
-  play accomp_A2
+  at 9:1:2
+  play lead_A1 on pulse1
   at 15
   play lead_A2
+  at 15:1:2
+  play lead_A2 on pulse1
   at 16
   play drum_fill_0
   at 17
   play accomp_A3
   play lead_A1 with pianov02
   play drum_A
-  at 21
-  play accomp_A4
   at 23
   play lead_A2 with pianov02
-
   at 24
+  play accomp_A4
   play drum_Aend
 
   at 25
   play accomp_B1
-  play lead_8
+  play lead_B1
   play bass_B
   play drum_B
   at 29
   play accomp_B2
-  play lead_9
   at 33
   play accomp_B3
-  play lead_6
   at 35
+  play lead_B2
   play bass_B2C
   at 37
   play accomp_B4
-  play lead_7
   at 40
   play drum_Bend
 

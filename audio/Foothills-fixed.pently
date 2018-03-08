@@ -1,3 +1,11 @@
+# Audio for NES port of Mega Mountain
+# Copyright 2018 Damian Yerrick
+# License: zlib
+# 
+# Foothills-fixed.o based on output from ft2p had size $8CA
+# or 2250 bytes.  After a few rounds of manual optimization,
+# its size was $694 or 1684 bytes.
+
 durations stick
 notenames english
 
@@ -33,8 +41,8 @@ sfx fall on pulse
 sfx text on noise
   volume 15 15 15 15 15
   pitch 15 14 13 14 15
-  timbre 1 1 0 1 0           
-  
+  timbre 1 1 0 1 0
+
 song Foothills
   time 12/16
   scale 16
@@ -58,38 +66,28 @@ song Foothills
     d#''8 g''8 w16 g'16 a#'8 d''16 d#''8 g''16
     c''8 w16 f''4 w8 g#''8 w16
     w8 w16 f''4 w16 d''16 c''8 a#'16 
-  pattern accomp_A4 with ban on pulse1
+  pattern accomp_A4BC with piano on pulse1
     absolute
-    @piano d#''8 w16 r8 d''8 @ban a#'16 d''16 f''16 g#''16 a#''16
-
-  pattern accomp_B1 with pianov02 on pulse1
-    absolute
-    w8 w16 c'8 w16 r8 d#'8 w16 r16
+    d#''8 w16 r8 d''8 @ban a#'16 d''16 f''16 g#''16 a#''16
+    # B
+    w8 w16 @pianov02 c'8 w16 r8 d#'8 w16 r16
     g#'8 r16 g#'8 d#'8 w16 r16 g#'8 r16
     a#'4 w16 @lateban a#'8 w16 w4
     w2 w4 
-  pattern accomp_B2 with pianov02 on pulse1
-    absolute
-    w8 w16 c''8 w16 r8 g#'8 w16 r16
+    w8 w16 @pianov02 c''8 w16 r8 g#'8 w16 r16
     d#'8 r16 d#'8 g#'8 w16 r16 c'8 r16
-    a#8 w16 c#'4 w16 @lateban a#''16 c'''8 w16
+    a#8 w16 c#'4 w16 @ban a#''16 c'''8 w16
     w2 w4
-  pattern accomp_B3 with ban on pulse1
-    absolute
     w8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''16
     w8 @ban c'''4 c'''8 w16 @triple_ding d#'''8 w16
     @ban a#''8 w16 a#''8 w16 a#''4 w16 @triple_ding d#'''16
     @piano c#''8 d#''8 r16 f''4 r8 w16 
-  pattern accomp_B4 with ban on pulse1
-    absolute
-    r8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''16
+    w8 w16 c'''8 w16 c'''4 w16 @triple_ding d#'''16
     w8 @ban c'''4 c'''8 w16 @pianov02 d#''8 w16
     d''8 w16 r8 w16 d#''8 w16 r8 f''16
     w4 w16 @ban e''16 f''16 d''16 a#'16 g#'16 f'16 d'16 
-
-  pattern accomp_C with pianov02 on pulse1
-    absolute
-    g'2 w16 a#'8 w16
+    # C
+    @pianov02 g'2 w16 a#'8 w16
     g#'4 w16 a#'4 g#'8 w16
     g'2 w16 g''8 w16
     f''4 w16 g''4 f''8 w16 
@@ -178,25 +176,25 @@ song Foothills
 
   pattern drum_A
     kick8 w16 snare8 w16 kick8 w16 snare8 w16
-    kick8 w16 snare8 kick16 clhat_c_8 kick16 snare8 clhat_c_16 
+    kick8 w16 snare8 kick16 clhat8 kick16 snare8 clhat16 
   pattern drum_fill_0
-    kick8 w16 snare8 kick16 clhat_c_8 kick16 snare16 clhat_c_16 snare16 
+    kick8 w16 snare8 kick16 clhat8 kick16 snare16 clhat16 snare16 
   pattern drum_introend
     kick8 w16 snare8 w16 kick8 w16 snare8 kick4
-      w8 w16 clhat_c_8 w16 clhat_c_8 w16 
+      w8 w16 clhat8 w16 clhat8 w16 
   pattern drum_Aend
     kick8 w16 kick8 snare16 kick8 kick16 snare16 snare16 snare16 
   pattern drum_B
-    kick8 clhat_c_16 clhat_c_8 kick16 snare8 w16 clhat_c_8 snare16
-    kick8 clhat_c_16 kick8 clhat_c_16 snare8 w16 clhat_c_8 w16
-    kick8 clhat_c_16 clhat_c_8 kick16 snare8 w16 clhat_c_8 snare16
-    kick8 clhat_c_16 kick8 clhat_c_16 snare8 clhat_c_16 snare8 w16 
+    kick8 clhat16 clhat8 kick16 snare8 w16 clhat8 snare16
+    kick8 clhat16 kick8 clhat16 snare8 w16 clhat8 w16
+    kick8 clhat16 clhat8 kick16 snare8 w16 clhat8 snare16
+    kick8 clhat16 kick8 clhat16 snare8 clhat16 snare8 w16 
   pattern drum_Bend
-    w4 w8 clhat_c_8 w16 clhat_c_8 w16 
+    w4 w8 clhat8 w16 clhat8 w16 
   pattern drum_C
-    kick8 w16 clhat_c_8 w16 kick8 w16 snare8 w16 
+    kick8 w16 clhat8 w16 kick8 w16 snare8 w16 
   pattern drum_Cend
-    snare4 w8 clhat_c_2 w4 w8 w1 
+    snare4 w8 clhat2 w4 w8 w1 
 
   at 1
   play accomp_intro
@@ -232,28 +230,20 @@ song Foothills
   at 23
   play lead_A2 with pianov02
   at 24
-  play accomp_A4
+  play accomp_A4BC
   play drum_Aend
 
   at 25
-  play accomp_B1
   play lead_B1
   play bass_B
   play drum_B
-  at 29
-  play accomp_B2
-  at 33
-  play accomp_B3
   at 35
   play lead_B2
   play bass_B2C
-  at 37
-  play accomp_B4
   at 40
   play drum_Bend
 
   at 41
-  play accomp_C
   play lead_C
   play drum_C
   at 46
@@ -319,12 +309,12 @@ song Intro_Theme_26_Ending
     f#'8 r4 w8 
 
   pattern drum_A
-    r8 clhat_c_8
+    r8 clhat8
   pattern drum_Aend
     kick8 kick8 
   pattern drum_B
-    kick8 clhat_c_8 clhat_c_8 clhat_c_8
-    kick8 clhat_c_8 snare8 clhat_c_8
+    kick8 clhat8 clhat8 clhat8
+    kick8 clhat8 snare8 clhat8
 
   at 1
   play accomp_A
@@ -401,7 +391,7 @@ song Villain
     d8 g#8 c8 d8 f'8 g#8 c8 d8 d8 g#8 c8 d8 f'8 g#8 c8 d8 
 
   pattern drum_0
-    kick8 clhat_c_8 ohat_c_8 kick8 snare8 clhat_c_8 ohat_c_4 kick8 clhat_c_16 kick16 ohat_c_8 kick8 snare8 clhat_c_8 ohat_c_4 
+    kick8 clhat8 ohat8 kick8 snare8 clhat8 ohat4 kick8 clhat16 kick16 ohat8 kick8 snare8 clhat8 ohat4 
 
   at 1
   play rhy on pulse1
@@ -419,22 +409,22 @@ sfx noise_kicksnare_0 on noise
   volume 11 8 6 4 3 2 1 1 
   pitch 10 0 
 
-drum kick noise_kicksnare_0
 sfx noise_kicksnare_a on noise
   volume 11 8 6 4 3 2 1 1 
   pitch 4 10 
 
-drum snare noise_kicksnare_a
 sfx noise_clhat_c on noise
   volume 5 3 2 1 1 
   timbre | 0 1 
   pitch 12 
 
-drum clhat_c_ noise_clhat_c
 sfx noise_ohat_c on noise
   volume 5 5 4 4 3 3 2 2 2 2 1 1 1 1 
   timbre | 0 1 
   pitch 12 
 
-drum ohat_c_ noise_ohat_c
+drum kick noise_kicksnare_0
+drum snare noise_kicksnare_a
+drum clhat noise_clhat_c
+drum ohat noise_ohat_c
 

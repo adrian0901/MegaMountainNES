@@ -1,10 +1,6 @@
 # Audio for NES port of Mega Mountain
-# Copyright 2018 Damian Yerrick
-# License: zlib
-# 
-# Foothills-fixed.o based on output from ft2p had size $8CA
-# or 2250 bytes.  After a few rounds of manual optimization,
-# its size was $694 or 1684 bytes.
+# Copyright 2018 adrian09_01
+# License: MIT
 
 durations stick
 notenames english
@@ -42,6 +38,14 @@ sfx text on noise
   volume 15 15 15 15 15
   pitch 15 14 13 14 15
   timbre 1 1 0 1 0
+
+# Music by Damian Yerrick
+# License: zlib
+# 
+# Foothills-fixed.o based on output from ft2p had size $8CA
+# or 2250 bytes.  After a few rounds of manual optimization
+# to remove repetition that FamiTracker's order table can't
+# easily represent, its size was $694 or 1684 bytes.
 
 song Foothills
   time 12/16

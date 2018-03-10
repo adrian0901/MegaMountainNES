@@ -1,0 +1,3 @@
+*.o
+/obj/nes/*.s
+/obj/nes/*.inc

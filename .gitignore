@@ -1,3 +1,4 @@
 *.o
+*.nes.deb
 /obj/nes/*.s
 /obj/nes/*.inc
